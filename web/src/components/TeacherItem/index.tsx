@@ -2,34 +2,56 @@ import React from 'react';
 import iconWhatsapp from './../../assets/images/icons/whatsapp.svg';
 
 import './styles.css';
-function TeacherItem() {
+import api from '../../services/api';
+
+export interface Teacher {
+    id: number;
+    cost: number;
+    bio: string;
+    name: string;
+    avatar: string;
+    subject: string;
+    whatsapp: string;
+}
+
+interface TeacherItemProps {
+    teacher: Teacher;
+}
+
+
+const TeacherItem: React.FC<TeacherItemProps> = ( { teacher }) => {
+
+    function createNewConnection() {
+        api.post('/connections', { user_id: teacher.id});
+    }
 
     return (
         <article className="teacher-item">
             <header>
                 <img 
-                    src="https://images.unsplash.com/photo-1530645298377-82c8416d3f90?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
-                    alt="João Mario"
+                    src={teacher.avatar} 
+                    alt={teacher.name}
                 />
                 <div>
-                    <strong>João Mario</strong>
-                    <span>Química</span>
+                    <strong>{teacher.name}</strong>
+                    <span>{teacher.subject}</span>
                 </div>
             </header>
-            <p>
-                 Descrição objetiva
-                <br /><br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tellus a nisl facilisis accumsan nec vitae turpis. Donec blandit bibendum hendrerit.    
-            </p>
+            <p> {teacher.bio} </p>
             <footer>
                 <p> 
                     Preço/hora
-                    <strong> R$ 80,00 </strong>
+                    <strong> R$ {teacher.cost} </strong>
                 </p>
-                <button type="button">
+                <a 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    onClick={createNewConnection} 
+                    href={`http://wa.me/55${teacher.whatsapp}?text=Olá,%20tenho%20interesse%20em%20ter%20aulas%20de%20${teacher.subject}!`}
+                >
                     <img src={iconWhatsapp} alt="Whatsapp"/>
                     Entrar em Contato
-                </button>
+                </a>
             </footer>
         </article>
     );
