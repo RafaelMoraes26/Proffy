@@ -5,13 +5,6 @@
 </h1>
 <p align="center">🚀 Projeto criado durante a Next Level Week da Rocketseat. O projeto tem o objetivo de criar uma conexão direta entre professores particulares e alunos.</p>
 
-<p align="center">
- <a href="#sobre">#Sobre</a> •
- <a href="#instalacao">#instalação</a> • 
- <a href="#comousar">#Como Usar</a> • 
- <a href="#tecnologias">#Tecnologias</a> 
-</p>
-
 <h4 align="center"> 
 	🚧  Proffy 🚀 Em construção...  🚧
 </h4>
