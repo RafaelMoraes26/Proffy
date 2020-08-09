@@ -53,7 +53,7 @@ $ yarn install
 # Execute a aplicação em modo de desenvolvimento
 $ yarn start
 
-# Uma nova guia será aberta no seu navegador padrão com a parta:3000
+# Uma nova guia será aberta no seu navegador padrão com a porta:3000
 ```
 
 ### 🎲 Rodando o Mobile (celular)
@@ -72,7 +72,7 @@ $ yarn install
 # Execute a aplicação em modo de desenvolvimento
 $ expo start
 
-# Uma nova guia será aberta no seu navegador padrão com a parta:19000, abra o aplicativo Expo no seu celular e scanneie o QR-CODE que será exibido
+# Uma nova guia será aberta no seu navegador padrão com a porta:19000, abra o aplicativo Expo no seu celular e scanneie o QR-CODE que será exibido
 ```
 
 ### 🛠 Tecnologias
