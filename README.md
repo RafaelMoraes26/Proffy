@@ -13,7 +13,7 @@
 ### Instalação
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Yarn](https://classic.yarnpkg.com/pt-BR/docs/install/#windows-stable), [Node.js](https://nodejs.org/en/) e [Expo](https://expo.io/) no seu celular. 
+[Yarn](https://classic.yarnpkg.com/pt-BR/docs/install/#windows-stable), [Node.js](https://nodejs.org/en/) e [Expo](https://expo.io/), este último apenas no seu smartphone. 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
 ### 🎲 Rodando o Back End (servidor)
